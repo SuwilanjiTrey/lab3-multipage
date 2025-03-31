@@ -1,6 +1,6 @@
 # lab3-multipage
 CSC 4035 LAB 3
-SUWILANJI CHELLAH - 2021531309
+SUWILANJI CHELLAH - 2021531309 <br>
 OLIVIA NGUNI - 2021460380
 
 This project is a multipage website built using HTML and CSS. The goal is to apply CSS techniques such as Flexbox, Grid, Media Queries, and Animations to ensure a responsive and visually appealing layout.
