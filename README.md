@@ -8,7 +8,7 @@ This project is a multipage website built using HTML and CSS. The goal is to app
 
 Features Implemented
 
-🔹 Home Page (index.html)
+✅ Home Page (index.html)
 
 Navigation Bar (Shared across all pages)
 
@@ -16,13 +16,13 @@ Hero Section (Intro and Sidebar using Flexbox)
 
 Footer
 
-🔹 Services Page (services.html)
+✅ Services Page (services.html)
 
 Grid Layout for Service Cards (5 cards)
 
 Hover Effects for Cards
 
-🔹 Contact Page (contact.html)
+✅ Contact Page (contact.html)
 
 Styled Contact Form (Full Name, Email, Subject, Message)
 
@@ -30,7 +30,7 @@ Input Placeholder Texts
 
 Form Validation using HTML5 Attributes
 
-🔹 CSS (style.css)
+✅ CSS (style.css)
 
 Navigation Bar Styled with Flexbox
 
