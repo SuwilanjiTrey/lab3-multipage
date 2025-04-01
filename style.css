@@ -1,4 +1,4 @@
-/* Global Styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,33 +7,46 @@
 }
 
 body {
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
 /* Navigation Bar */
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #007bff;
-    padding: 15px;
+header {
+    background: #333;
+    padding: 15px 0;
 }
 
-nav a {
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 18px;
+    transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #f4a261;
 }
 
-/* Home Page - Flexbox Layout */
+/* Home Page (index.html) */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('images/hero-banner.jpg') no-repeat center center/cover;
+    color: white;
+    font-size: 24px;
+}
+
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -41,26 +54,20 @@ nav a:hover {
 }
 
 .intro, .right-side {
-    width: 48%;
-    background: white;
+    flex: 1;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero Banner */
-.hero {
+/* Services Page (Grid Layout) */
+.services-section {
     text-align: center;
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2rem;
+    padding: 40px 20px;
 }
 
-/* Services Page - Grid Layout */
 .all-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -71,69 +78,76 @@ nav a:hover {
 .card {
     background: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
-/* Contact Page - Form Styles */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Page Form */
 .contact-form {
     max-width: 500px;
-    margin: 20px auto;
+    margin: 40px auto;
     background: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    transition: border 0.3s ease-in-out;
+    transition: border-color 0.3s;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border: 1px solid #007bff;
+    border-color: #f4a261;
 }
 
-/* Button Animation */
+/* Button Animations */
 button {
-    background: #007bff;
-    color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
+    background: #f4a261;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #e76f51;
 }
 
+/* Footer Styles */
 footer {
-    background-color: #222;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 20px;
+    background: #333;
+    color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
-    }
-    .intro, .right-side {
-        width: 100%;
+        align-items: center;
     }
 }
 
@@ -144,11 +158,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-    nav {
+    nav ul {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
-    .hero {
-        font-size: 1.5rem;
+    .main-container, .contact-form {
+        padding: 10px;
     }
 }
