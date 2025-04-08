@@ -35,6 +35,12 @@ async () =>{
     });
   }catch (err) {
     console.error("failed to load users: ", err);
-  }
-  
+    }
   });
+
+
+document.querySelectorAll(".question").forEach((q) => {
+  q.addEventListener("click", () => {
+    q.nextElementSibling.classList.toggle("visible");
+  });
+});
