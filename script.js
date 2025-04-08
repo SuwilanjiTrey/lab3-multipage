@@ -3,8 +3,7 @@ document.getElementById("themeToggle").addEventListener("click", () =>
 document.body.classList.toggle("dark-theme");
 });
 
-document.getElementById("contactForm").addEventListener("submit", (e) 
-=> {
+document.getElementById("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const name = document.getElementById("nameInput").value.trim();
   const message = document.getElementById("messageInput").value.trim();
