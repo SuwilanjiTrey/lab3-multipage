@@ -19,8 +19,9 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 
 document.getElementById("loadUserBtn").addEventListener("click",
 async () =>{
-  console.log("button clicked")
+  
   try{
+    console.log("button clicked");
     const res = await
   fetch('https://jsonplaceholder.typicode.com/users');
     const users = await res.json();
