@@ -13,10 +13,8 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
     alert("please fill out all field");
   } else {
     document.getElementById("Response").innerText = `Thanks, ${name}. we'll get back to you soon!`;
-
     e.target.reset();
     } 
-  }
 });
 
 document.getElementById("loadUserBtn").addEventListener("click",
