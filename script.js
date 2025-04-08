@@ -18,4 +18,23 @@ document.getElementById("contactForm").addEventListener("submit", (e)
     e.target.reset();
     } 
   }
-})
+});
+
+document.getElementById("loadUserBtn").addEventListener("click",
+async () =>{
+  try{
+    const res = await
+  fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await res.json();
+    const userList = document.getElementById("userList");
+    userList.innerHTML = "";
+    users.forEach(user => {
+      const li = document.createElement("li");
+      li.textContent = user.name;
+      userList.appendChild(li);
+    });
+  }catch (err) {
+    console.error("failed to load users: ", err);
+  }
+  
+  });
