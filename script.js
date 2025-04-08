@@ -12,7 +12,7 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   if (name === "" || message === ""){
     alert("please fill out all field");
   } else {
-    document.getElementById("Response").innerText = `Thanks, ${name}. we'll get back to you soon!`;
+    document.getElementById("response").innerText = `Thanks, ${name}. we'll get back to you soon!`;
     e.target.reset();
     } 
 });
