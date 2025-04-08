@@ -109,7 +109,7 @@ color: #f0f0f0;
 }
 
 /* Contact Page Form */
-.contact-form {
+.contact-form, .Faq {
     max-width: 500px;
     margin: 40px auto;
     background: white;
