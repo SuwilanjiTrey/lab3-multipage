@@ -19,6 +19,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 
 document.getElementById("loadUserBtn").addEventListener("click",
 async () =>{
+  console.log("button clicked")
   try{
     const res = await
   fetch('https://jsonplaceholder.typicode.com/users');
