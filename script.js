@@ -19,7 +19,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
  console.log("change pages");
 document.getElementById("loadUserBtn").addEventListener("click",
 async () =>{
- console.log("button clicked"); 
+ alert("button clicked"); 
   try{
     
     const res = await
