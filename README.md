@@ -39,3 +39,40 @@ Grid Layout for Services Page
 Responsive Design (Media Queries for 1024px, 768px, 480px)
 
 @keyframes Animation & Hover Effects
+
+
+
+# updated information
+Features Implemented
+Core Requirements
+
+    Theme Toggle
+        Toggles between light/dark mode
+        Persists preference using localStorage
+
+    Enhanced Form Validation
+        Prevents empty submissions
+        Validates email format
+        Shows custom success message
+
+    Fetch API Integration
+        Loads and displays user data from JSONPlaceholder API
+        Handles loading states and errors
+
+    Interactive FAQ Component
+        Click questions to reveal/hide answers
+        Smooth animations with CSS transitions
+
+Bonus Features
+
+Real-time Clock
+
+    Displays current time in header
+    Updates every second
+
+Back to Top Button
+
+    Appears after scrolling down
+    Smooth scroll to top
+
+
